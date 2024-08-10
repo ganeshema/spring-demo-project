@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-k8s-service
+spec:
+  selector:
+    app.kubernetes.io/name: demo-k8s
+  ports:
+    - protocol: TCP
+      port: 9090
+      targetPort: 9090
+
